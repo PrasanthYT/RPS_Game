@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", serif;
+}
+
+body{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav{
+    width: 20%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: small;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.RPC-score-board{
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.info-of-players{
+    font-size: small;
+}
+
+.RCP-players-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.RCP-player-area{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.RCP-computer-area{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#RCP-output-area-one {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#RCP-output-area-one p{
+    font-size: large;
+    font-weight: bolder;
+}
+
+#RCP-output-area-two {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#RCP-output-area-two p{
+    font-size: large;
+    font-weight: bolder;
+}
+
+.block-area {
+    width: 100%;
+    height: 30px;
+}
+
+.RCP-buttons {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.RCP-buttons input{
+    width: 70px;
+    height: 20px;
+    border: 1px solid black;
+    font-size: small;
+    background-color: transparent;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.replay-btn{
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    font-size: small;
+    background-color: transparent;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 5px;
+}
