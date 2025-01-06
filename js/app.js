@@ -2,8 +2,8 @@ var paper_btn = document.getElementById("paper");
 var rock_btn = document.getElementById("rock");
 var scissor_btn = document.getElementById("scissors");
 
-var insert_img = document.getElementById("image-area");
-var insert_img_one = document.getElementById("image-area-one");
+var insert_img = document.getElementById("RCP-output-area-one");
+var insert_img_one = document.getElementById("RCP-output-area-two");
 var updatePlayer = document.getElementById("player");
 var updateComputer = document.getElementById("computer");
 var wonMessage = document.getElementById("won");
@@ -17,7 +17,7 @@ function random_text() {
   var name_list = ["Rock", "Paper", "Scissors"];
   var list_item = ["rock", "paper", "scissors"];
   var ran_num = Math.floor(Math.random() * 3);
-  insert_img_one.innerHTML = `<p class="insert-img">${name_list[ran_num]}</p>`;
+  insert_img_one.innerHTML = `<p>${name_list[ran_num]}</p>`;
   input_computer = list_item[ran_num];
 }
 
@@ -64,9 +64,9 @@ function checkWinner() {
     scissor_btn.disabled = true;
 
     if (player_score > computer_score) {
-      wonMessage.textContent = "Player (You) Won!!!";
+      wonMessage.textContent = "Player (You) Won!";
     } else {
-      wonMessage.textContent = "Computer Won!!!";
+      wonMessage.textContent = "Computer Won!";
     }
 
     showReplayButton();
@@ -95,4 +95,8 @@ function resetGame() {
 
   const replayButton = document.querySelector(".replay-btn");
   if (replayButton) replayButton.remove();
+}
+
+function github_open(){
+    window.open("https://github.com/PrasanthYT/RPS_Game", "_blank");
 }
